@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Ivis</title>
+    <link rel="stylesheet" href="animaciones.css">
+    <script src="script.js" defer></script>  <!-- Asegúrate de que la ruta sea correcta -->
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="barra">
+        <div class="logo">
+            <img src="compledeivis.png" alt="Logo"> <!-- Asegúrate de usar el nombre correcto del archivo de tu logo -->
+        </div>
+        <div>
+            <!-- Botones de navegación -->
+            <button title="Mensaje" onclick="showMessage()">Mensaje</button>
+            <button title="maquillajes" onclick="window.open('https://www.instagram.com/ivis_queen?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', '_blank')">Maquillajes</button>
+            
+        </div>
+    </nav>
+    <div class="content">
+        <div class="message">
+            <h2>Feliz Cumpleaños Ivis 🎉</h2>
+            <p>Espero que este día esté lleno de alegría, amor y sorpresas maravillosas. ¡Disfruta al máximo tu día especial!</p>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="ivis.jpg" alt="Imagen 1">
+                <img src="ivis2.jpg" alt="Imagen 2">
+                <img src="ivis3.jpg" alt="Imagen 3">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+    
+
+</body>
+</html>

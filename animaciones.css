@@ -1,0 +1,118 @@
+/* Fondo negro */
+body {
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco para mejor contraste */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fffefe; /* Gris oscuro para contrastar con el fondo negro */
+    border-bottom: 2px solid #ff007f; /* Detalle rosado */
+}
+
+/* Logo */
+.logo img {
+    height: 50px; /* Ajusta el tamaño del logo si es necesario */
+}
+
+/* Botones */
+.barra div button {
+    background-color: #ff007f; /* Rosado vibrante */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover en botones */
+.barra div button:hover {
+    background-color: #ff4da6; /* Rosado más claro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Alineación de los botones */
+.barra div {
+    display: flex;
+    gap: 10px; /* Espacio entre botones */
+}
+/* Contenedor para el carrusel y el mensaje */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Espacio entre el mensaje y el carrusel */
+    width: 90%;
+    max-width: 1200px; /* Para que el contenido no sea tan ancho */
+}
+
+/* Estilos para el mensaje */
+.message {
+    flex: 1; /* Ocupa el 50% del espacio */
+    padding: 20px;
+    background-color: rgba(255, 0, 127, 0.2); /* Fondo rosado semitransparente */
+    border-radius: 10px;
+    border: 2px solid #ff007f;
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+    text-align: left;
+}
+
+/* Carrusel */
+.carousel {
+    flex: 1.5; /* Ocupa más espacio que el mensaje */
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ff007f;
+    border-radius: 10px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    border: none;
+}
+
+/* Botones de navegación */
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: #ff007f;
+}
